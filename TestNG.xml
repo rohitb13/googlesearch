@@ -1,0 +1,7 @@
+<suite name="DemoTest">
+<test name="testngTest">
+<classes>
+<class name="com.cicd.jenkins.testscripts.Searchgoogle" />
+</classes>
+</test>
+</suite>
