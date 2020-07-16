@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="DemoTest" duration-ms="30026" started-at="2020-07-15T09:44:53Z" finished-at="2020-07-15T09:45:23Z">
+  <suite name="DemoTest" duration-ms="49942" started-at="2020-07-16T07:59:58Z" finished-at="2020-07-16T08:00:47Z">
     <groups>
     </groups>
-    <test name="testngTest" duration-ms="30026" started-at="2020-07-15T09:44:53Z" finished-at="2020-07-15T09:45:23Z">
+    <test name="testngTest" duration-ms="49942" started-at="2020-07-16T07:59:58Z" finished-at="2020-07-16T08:00:47Z">
+      <class name="com.cicd.jenkins.testscripts.SampleSelTest">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:1, instance:com.cicd.jenkins.testscripts.SampleSelTest@35f983a6]" name="LaunchBrowser" duration-ms="11866" started-at="2020-07-16T08:00:28Z" finished-at="2020-07-16T08:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="Urlhit()[pri:2, instance:com.cicd.jenkins.testscripts.SampleSelTest@35f983a6]" name="Urlhit" duration-ms="6136" started-at="2020-07-16T08:00:39Z" finished-at="2020-07-16T08:00:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Urlhit -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:3, instance:com.cicd.jenkins.testscripts.SampleSelTest@35f983a6]" name="CloseBrowser" duration-ms="1852" started-at="2020-07-16T08:00:46Z" finished-at="2020-07-16T08:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.cicd.jenkins.testscripts.SampleSelTest -->
       <class name="com.cicd.jenkins.testscripts.Searchgoogle">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@6442b0a6]" name="setupTest" is-config="true" duration-ms="34" started-at="2020-07-15T09:44:53Z" finished-at="2020-07-15T09:44:53Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@60f82f98]" name="setupTest" is-config="true" duration-ms="27" started-at="2020-07-16T07:59:58Z" finished-at="2020-07-16T07:59:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupMethod()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@6442b0a6]" name="setupMethod" is-config="true" duration-ms="17161" started-at="2020-07-15T09:44:54Z" finished-at="2020-07-15T09:45:11Z">
+        <test-method status="PASS" signature="setupMethod()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@60f82f98]" name="setupMethod" is-config="true" duration-ms="12856" started-at="2020-07-16T07:59:58Z" finished-at="2020-07-16T08:00:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="anysearch()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@6442b0a6]" name="anysearch" duration-ms="10432" started-at="2020-07-15T09:45:11Z" finished-at="2020-07-15T09:45:21Z">
+        <test-method status="PASS" signature="anysearch()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@60f82f98]" name="anysearch" duration-ms="15180" started-at="2020-07-16T08:00:10Z" finished-at="2020-07-16T08:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- anysearch -->
-        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@6442b0a6]" name="tearDownDriver" is-config="true" duration-ms="2318" started-at="2020-07-15T09:45:21Z" finished-at="2020-07-15T09:45:23Z">
+        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:com.cicd.jenkins.testscripts.Searchgoogle@60f82f98]" name="tearDownDriver" is-config="true" duration-ms="1980" started-at="2020-07-16T08:00:26Z" finished-at="2020-07-16T08:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->

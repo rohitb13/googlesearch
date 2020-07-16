@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DemoTest" duration-ms="61311" started-at="2020-07-16T07:56:05Z" finished-at="2020-07-16T07:57:06Z">
+    <groups>
+    </groups>
+    <test name="testngTest" duration-ms="61311" started-at="2020-07-16T07:56:05Z" finished-at="2020-07-16T07:57:06Z">
+      <class name="com.cicd.jenkins.testscripts.SampleSelTest">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:1, instance:com.cicd.jenkins.testscripts.SampleSelTest@1d057a39]" name="LaunchBrowser" duration-ms="45576" started-at="2020-07-16T07:56:05Z" finished-at="2020-07-16T07:56:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="Urlhit()[pri:2, instance:com.cicd.jenkins.testscripts.SampleSelTest@1d057a39]" name="Urlhit" duration-ms="12106" started-at="2020-07-16T07:56:51Z" finished-at="2020-07-16T07:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Urlhit -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:3, instance:com.cicd.jenkins.testscripts.SampleSelTest@1d057a39]" name="CloseBrowser" duration-ms="3563" started-at="2020-07-16T07:57:03Z" finished-at="2020-07-16T07:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.cicd.jenkins.testscripts.SampleSelTest -->
+    </test> <!-- testngTest -->
+  </suite> <!-- DemoTest -->
+</testng-results>

@@ -2,6 +2,7 @@
 <test name="testngTest">
 <classes>
 <class name="com.cicd.jenkins.testscripts.Searchgoogle" />
+<class name="com.cicd.jenkins.testscripts.SampleSelTest" />
 </classes>
 </test>
 </suite>
