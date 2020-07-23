@@ -5,14 +5,14 @@ pipeline {
     
         stage('IntegrationTest') {
             steps {
-                echo 'This is Building..'
+                echo 'IntegrationTest'
                 bat "mvn clean install"
             }
 			}
             
-            stage('DeployTestSertver') {
+            stage('DeployTestServer') {
             steps {
-                echo 'DeployTestSertver'
+                echo 'DeployTestServer'
                 
             }
 			}
