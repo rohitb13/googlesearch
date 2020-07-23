@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-DemoTest">
-              <span class="suite-name border-passed">DemoTest</span>
+              <span class="suite-name border-failed">DemoTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DemoTest" class="hide-methods failed suite-DemoTest"> (hide)</a> <!-- hide-methods failed suite-DemoTest -->
+                      <a href="#" panel-name="suite-DemoTest" class="show-methods failed suite-DemoTest"> (show)</a> <!-- show-methods failed suite-DemoTest -->
+                    </span>
+                    <div class="method-list-content failed suite-DemoTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DemoTest" title="com.cicd.jenkins.testscripts.Searchgoogle" hash-for-method="anysearch">anysearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DemoTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +129,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-DemoTest" title="com.cicd.jenkins.testscripts.SampleSelTest" hash-for-method="Urlhit">Urlhit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-DemoTest" title="com.cicd.jenkins.testscripts.Searchgoogle" hash-for-method="anysearch">anysearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-DemoTest -->
                   </li>
                 </ul>
@@ -132,9 +141,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DemoTest" class="panel DemoTest">
-          <div class="suite-DemoTest-class-passed">
+          <div class="suite-DemoTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.cicd.jenkins.testscripts.Searchgoogle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,10 +152,28 @@
                   <a name="anysearch">
                   </a> <!-- anysearch -->
                   <span class="method-name">anysearch</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=84.0.4147.89)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;L-5493&apos;, ip: &apos;192.168.43.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rohitb13\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 370180d0871b17679d5e021623a2170d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.cicd.jenkins.testscripts.Searchgoogle.anysearch(Searchgoogle.java:32)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DemoTest-class-passed -->
+          </div> <!-- suite-DemoTest-class-failed -->
           <div class="suite-DemoTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -231,26 +258,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'anysearch')
-data.setCell(0, 2, 'com.cicd.jenkins.testscripts.Searchgoogle')
-data.setCell(0, 3, 15180);
+data.setCell(0, 1, 'LaunchBrowser')
+data.setCell(0, 2, 'com.cicd.jenkins.testscripts.SampleSelTest')
+data.setCell(0, 3, 10511);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LaunchBrowser')
+data.setCell(1, 1, 'Urlhit')
 data.setCell(1, 2, 'com.cicd.jenkins.testscripts.SampleSelTest')
-data.setCell(1, 3, 11866);
+data.setCell(1, 3, 9163);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Urlhit')
+data.setCell(2, 1, 'CloseBrowser')
 data.setCell(2, 2, 'com.cicd.jenkins.testscripts.SampleSelTest')
-data.setCell(2, 3, 6136);
+data.setCell(2, 3, 2617);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CloseBrowser')
-data.setCell(3, 2, 'com.cicd.jenkins.testscripts.SampleSelTest')
-data.setCell(3, 3, 1852);
+data.setCell(3, 1, 'anysearch')
+data.setCell(3, 2, 'com.cicd.jenkins.testscripts.Searchgoogle')
+data.setCell(3, 3, 1337);
 window.suiteTableData['DemoTest']= { tableData: data, tableDiv: 'times-div-DemoTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-DemoTest">
               </div> <!-- times-div-DemoTest -->
             </div> <!-- times-div -->
@@ -283,30 +310,32 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setupMethod</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">86 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">anysearch</span>
-                <span class="method-start">12918 ms</span>
+                <span class="method-start">10099 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownDriver</span>
-                <span class="method-start">28101 ms</span>
+                <span class="method-start">11539 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cicd.jenkins.testscripts.SampleSelTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LaunchBrowser</span>
-                <span class="method-start">30083 ms</span>
+                <span class="method-start">12937 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Urlhit</span>
-                <span class="method-start">41951 ms</span>
+                <span class="method-start">23449 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">48088 ms</span>
+                <span class="method-start">32612 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

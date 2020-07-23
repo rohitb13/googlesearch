@@ -19,7 +19,8 @@ pipeline {
             
             stage('SeliniumTest') {
             steps {
-                echo 'SeliniumTest'
+                echo 'SeliniumTest.'
+                bat "mvn test"
                 
             }
 			}
