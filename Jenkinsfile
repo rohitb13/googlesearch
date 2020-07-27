@@ -12,7 +12,7 @@ pipeline {
             
             stage('DeployTestServer') {
             steps {
-                echo 'DeployTestServer2'
+                echo 'DeployTestServer'
                 
             }
 			}
