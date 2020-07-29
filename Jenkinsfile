@@ -3,21 +3,22 @@ pipeline {
 
     stages {
     
-        stage('IntegrationTest') {
+        stage('Build') {
             steps {
                 echo 'IntegrationTest'
+                bat "mvn clean install"
                 
             }
 			}
             
-            stage('DeployTestServer') {
+            stage('Deploy') {
             steps {
                 echo 'DeployTestServer'
                 
             }
 			}
             
-            stage('SeliniumTest') {
+            stage('Test') {
             steps {
                 echo 'SeliniumTest1.'
               
@@ -25,7 +26,7 @@ pipeline {
             }
 			}
             
-            stage('DeployProdServer') {
+            stage('Release') {
             steps {
                 echo 'DeployProdServer'
                 
