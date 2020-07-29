@@ -6,7 +6,7 @@ pipeline {
         stage('IntegrationTest') {
             steps {
                 echo 'IntegrationTest'
-                bat "mvn clean install"
+                
             }
 			}
             
@@ -19,8 +19,8 @@ pipeline {
             
             stage('SeliniumTest') {
             steps {
-                echo 'SeliniumTest.'
-                bat "mvn test"
+                echo 'SeliniumTest1.'
+              
                 
             }
 			}
